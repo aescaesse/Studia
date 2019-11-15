@@ -1,0 +1,5 @@
+H:\Głąb Sylwester\BibliotekaKlas\BibliotekaKlas\obj\Debug\BibliotekaKlas.csprojResolveAssemblyReference.cache
+H:\Głąb Sylwester\BibliotekaKlas\BibliotekaKlas\bin\Debug\BibliotekaKlas.dll
+H:\Głąb Sylwester\BibliotekaKlas\BibliotekaKlas\bin\Debug\BibliotekaKlas.pdb
+H:\Głąb Sylwester\BibliotekaKlas\BibliotekaKlas\obj\Debug\BibliotekaKlas.dll
+H:\Głąb Sylwester\BibliotekaKlas\BibliotekaKlas\obj\Debug\BibliotekaKlas.pdb
