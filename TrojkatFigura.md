@@ -76,7 +76,7 @@ namespace Egzamin
     {
         static void Main()
         {
-            Trojkat nowa = new Trojkat("czarny",5,5,5,5,"huj");
+            Trojkat nowa = new Trojkat("czarny",5,5,5,5,"nazwa");
             nowa.Rysuj();
         }
     }
