@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Egzamin
 {
-   public class Figura
+    public class Figura
     {
         private int x;
         private int y;
@@ -21,7 +21,6 @@ namespace Egzamin
             this.x = w1;
             this.y = w2;
             this.kolor = k;
-
         }
 
         public string Kolor
@@ -32,7 +31,6 @@ namespace Egzamin
 
         virtual public void Rysuj()
         {
-           
             string a = string.Format("({0},{1}) - {2}", this.x, this.y, this.kolor);
             Console.Write(a);
         }
@@ -45,18 +43,13 @@ namespace Egzamin
         private double podstawa;
         private double wysokosc;
 
-      
         public Trojkat(string n, double p, double w, int x, int y, string kolor)
             : base(x, y, kolor)
         {
             this.nazwa = n;
             this.podstawa = p;
             this.wysokosc = w;
-           
-
         }
-
-       
 
         public double Podstawa
         {
@@ -70,8 +63,6 @@ namespace Egzamin
             base.Rysuj();
             string a = String.Format(",{0}:{1},{2}\n", this.nazwa, this.podstawa, this.wysokosc);
             Console.Write(a);
-
-
         }
     }
 
@@ -79,8 +70,16 @@ namespace Egzamin
     {
         static void Main()
         {
-            Trojkat nowa = new Trojkat("czarny",5,5,5,5,"nazwa");
+            Trojkat nowa = new Trojkat("nazwa",2,1,3,7,"czarny");
             nowa.Rysuj();
+            Figura jakas = new Figura(6, 9, "zielona");
+            jakas.Rysuj();
+            Console.WriteLine();
+            jakas.Kolor = "Biała";
+            Console.WriteLine(jakas.Kolor);
+            Trojkat kolejna = new Trojkat("black", 2, 1, 3, 7, "cos");
+            kolejna.Podstawa = 23;
+            Console.WriteLine(kolejna.Podstawa);
         }
     }
 }
