@@ -1,5 +1,6 @@
 ### Polecenie
 <img src="Zdjecia/ile.png" width="250" height="250">
+<img src="Zdjecia/ile2.png" width="250" height="250">
 
 ```C
 #define _CRT_SECURE_NO_WARNINGS
