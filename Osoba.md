@@ -1,3 +1,6 @@
+### Polecenie 
+<img src="Zdjecia/osoba.png" width="250" height="250" >
+
 ```C#
 using System;
 using System.Collections.Generic;
