@@ -14,7 +14,6 @@ namespace BibliotekaKlas
         private Data dataUrodzenia;
         private Adres adresZamieszkania;
 
-
         public string Imie
         {
             get { return imie; }
@@ -51,8 +50,6 @@ namespace BibliotekaKlas
             this.nazwisko = n;
             this.dataUrodzenia = new Data(u);
             this.adresZamieszkania = new Adres(a);
-
-
         }
        
         public Pracownik(Pracownik wzor)
@@ -66,9 +63,7 @@ namespace BibliotekaKlas
         public virtual Pracownik Clone()
         {
             return new Pracownik(this);
-        }
-
-        
+        }        
 
         public override string ToString()
         {
@@ -78,14 +73,11 @@ namespace BibliotekaKlas
         public virtual string FormatWyjsciowy()
             {
             string wyjscie = string.Format("Imie,nazwisko:{0}{1}\n Data urodzenia: {2}\n Adres zamieszkania: {3}", imie, nazwisko, dataUrodzenia, adresZamieszkania);
-            return wyjscie;
-
-            
+            return wyjscie;      
             }
         public virtual string SzczegolyZawodu()
         {
             return "brak";
-
         }
 
         public string DataToString()
@@ -111,7 +103,6 @@ namespace BibliotekaKlas
             adresZamieszkania.Ulica = Console.ReadLine();
             adresZamieszkania.NumerDomu = Console.ReadLine();
             adresZamieszkania.Miasto = Console.ReadLine();
-
         }
 
         public void Zapisz()
