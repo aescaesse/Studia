@@ -1,3 +1,6 @@
+###Polecenie
+<img src="Zdjecia/ile.png" width="250" height="250">
+
 ```C
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
