@@ -1,4 +1,4 @@
-###Polecenie
+### Polecenie
 <img src="Zdjecia/ile.png" width="250" height="250">
 
 ```C
