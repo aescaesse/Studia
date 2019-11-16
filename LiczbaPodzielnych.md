@@ -1,6 +1,6 @@
 ### Polecenie 
 
-<img src="LiczbaPodzielnych.png" width=250 height=300 >
+<img src="Zdjecia/LiczbaPodzielnych.png" width=250 height=300 >
 
 ```C
 #define _CRT_SECURE_NO_WARNINGS
