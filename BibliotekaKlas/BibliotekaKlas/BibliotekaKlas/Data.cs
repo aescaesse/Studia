@@ -52,6 +52,10 @@ namespace BibliotekaKlas
         }
         public static string ZwrocMiesiac(int miesiac)
         {
+            if (miesiac < 0 || miesiac > 12)
+            {
+                Console.WriteLine("Nie ma takiego miesiaca.");
+            }
            return "Miesiac:" + miesiace[miesiac-1];
         }
 
