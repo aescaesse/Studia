@@ -1,6 +1,6 @@
 ### Polecenie
 
-<img src="Zdjecia/polecenie.jpg" width=250 height=250 >
+<img src="Zdjecia/polecenia.jpg" width=250 height=250 >
 
 ```
 1. Hermetyzacja polega na ukrywaniu pewnych danych składowych lub metod obiektów danej klasy tak, aby były one dostępne tylko metodom wewnętrznym danej klasy lub funkcjom zaprzyjaźnionym.
