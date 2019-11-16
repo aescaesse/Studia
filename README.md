@@ -1,1 +1,1 @@
-<img src="Zdjecia/spurdo.png" width=500 height=500 >
+<img src="Zdjecia/spurdo.png" width=500 height=400 >
