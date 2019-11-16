@@ -1,6 +1,6 @@
-### Polecenie //niezbyt czytelne
+### Polecenie 
 
-<img src="LiczbaPodzielnych.png" width=250 height=500 >
+<img src="LiczbaPodzielnych.png" width=250 height=300 >
 
 ```C
 #define _CRT_SECURE_NO_WARNINGS
