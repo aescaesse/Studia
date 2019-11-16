@@ -1,5 +1,5 @@
 ### Polecenie
-<img src="Zdjecia/ZamienParami.jpg" width=500 height=150 >
+<img src="Zdjecia/ZamienParami.jpg" width=550 height=150 >
 
 ``` C
 #define _CRT_SECURE_NO_WARNINGS
