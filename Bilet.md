@@ -1,5 +1,5 @@
 ### Polecenie 
-<img src="Zdjecia/Bilet.jpg" width="250" height="250" >
+<img src="Zdjecia/bilet.jpg" width="250" height="250" >
 
 ```C#
 using System;
