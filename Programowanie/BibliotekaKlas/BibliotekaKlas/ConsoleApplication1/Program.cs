@@ -8,7 +8,7 @@ namespace WierszPolecen
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.SetWindowSize(100, 50);
             int i = 0;

@@ -1,5 +1,4 @@
-﻿//Magdalena Nizioł, Tomasz Meyer
-namespace BibliotekaKlas
+﻿namespace BibliotekaKlas
 {
     public enum Zawody : short
     {
