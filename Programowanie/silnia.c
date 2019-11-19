@@ -11,7 +11,7 @@ int silnia(int n)
 void main()
 {
 	int n;
-	printf("Podaj liczbe z ktorej chcesz policzyc silnie: ");
+	printf("Podaj liczbe: ");
 	scanf("%i", &n);
 	printf("Silnia z %i = %i", n, silnia(n));
 }
