@@ -1,22 +1,28 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
+#include <stdio.h>
 
-int fibo(unsigned int n)
+int Fibo(int n)
 {
-	int i = 0, a = 1, b = 0, c;			
-	for (i; i < n - 1; i++)			
-	{
-		c = a + b;
-		b = a;
-		a = c;
-	}
-	return a;
-}
+	int f1 = 1;
+	int f2 = 1;
+	int f3 = 0;
 
+	while (n > 2)
+	{
+		f3 = f1 + f2;
+		f1 = f2;
+		f2 = f3;
+		n--;
+	}
+	return f3;
+}
 void main()
 {
-	unsigned int n;
-	printf("Podaj ktory wyraz ciagu Fibo chcesz uzyskac: ");
-	scanf("%u", &n);
-	printf("%u wyraz ciagu Fibonacciego to: %i", n, fibo(n));
+	int n;
+	printf("Podaj pozycje ciagu Fib: ");
+	scanf("%i", &n);
+
+	
+	printf("%d element to: %i", n, Fibo(n);
+
 }
