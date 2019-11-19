@@ -3,15 +3,13 @@
 
 void WypiszBitowo(unsigned short liczba)
 {
-	int i;
-	for (i = 15; i >= 0; i--)
+	for (int i = 15; i >= 0; i--)
 	{
 		if ((i + 1) % 4 == 0)
 			printf(" ");
 		printf("%d", (liczba >> i) % 2);
 	}
 }
-
 
 void main()
 {

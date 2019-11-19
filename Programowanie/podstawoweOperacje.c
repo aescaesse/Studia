@@ -14,40 +14,40 @@ void WypiszBitowo(unsigned short liczba)
 
 void PodstawoweOperacjeBitowe(unsigned short a, unsigned short b, unsigned short n)
 {
-	int c;
-	printf("\n%d bitowo:\t", a);
+	unsigned short c;
+	printf("a \t");
 	WypiszBitowo(a);
-	printf("\n%d bitowo:\t", b);
+	printf("\n");
+	printf("b \t");
 	WypiszBitowo(b);
-	printf("\nSuma bitowa %d i %d =\t", a, b);
-	c = a | b;										
+	c = a&b;
+	printf("\na&b \t");
 	WypiszBitowo(c);
-	printf("\nIloczyn bitowy %d i %d =\t", a, b);
-	c = a & b;										
+	c = a|b;
+	printf("\na|b \t");
 	WypiszBitowo(c);
-	printf("\nEX-OR bitowy %d i %d =\t", a, b);
-	c = a ^ b;									
+	c = a^b;
+	printf("\na^b \t");
 	WypiszBitowo(c);
-	printf("\nNegacja bitowa %d =\t", a);
-	c = ~a;										
+	c = a << n;
+	printf("\na << n \t");
 	WypiszBitowo(c);
-	printf("\nPrzesuniecie bitowe %d w prawo o %d =\t", a, n);
-	c = a >> n;										
+	c = a >> n;
+	printf("\na>>n \t");
 	WypiszBitowo(c);
-	printf("\nPrzesuniecie bitowe %d w lewo o %d =\t", a);
-	c = a << n;									
+	c = ~a;
+	printf("\n~a \t");
 	WypiszBitowo(c);
 }
 
 void main()
 {
 	unsigned short a, b, n;
-	printf("Podaj pierwsza liczbe: ");
+	printf("Podaj a: ");
 	scanf("%hu", &a);
-	printf("Podaj druga liczbe: ");
+	printf("Podaj b: ");
 	scanf("%hu", &b);
-	printf("Podaj liczbe o jaka chcesz przesunac pierwsza liczbe: ");
+	printf("Przesuniecie o: ");
 	scanf("%hu", &n);
 	PodstawoweOperacjeBitowe(a, b, n);
-
 }
