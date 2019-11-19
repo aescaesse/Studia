@@ -16,13 +16,11 @@ int Fibo(int n)
 	}
 	return f3;
 }
+
 void main()
 {
 	int n;
 	printf("Podaj pozycje ciagu Fib: ");
 	scanf("%i", &n);
-
-	
 	printf("%d element to: %i", n, Fibo(n);
-
 }
