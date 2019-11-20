@@ -1,6 +1,5 @@
-<iframe src="PP-lista1.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
-
-### Zadanie 
+# Zadania z pliku https://github.com/aescaesse/Studia/blob/master/PP-lista1.pdf
+### Zadanie 1
 
 ```cpp
 #include <iostream>
