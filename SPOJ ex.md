@@ -1,6 +1,6 @@
-<embed src="PP-lista1.pdf" width="500" height="375">
+<embed src="PP-lista1.pdf" width="500" height="375" type="application/pdf">
 ### Zadanie 
-```c++
+```cpp
 #include <iostream>
 #include <iomanip>
 #define PI 3.141592654
