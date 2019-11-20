@@ -1,0 +1,5 @@
+﻿  pierwiastki.c
+h:\głąb sylwester\zajecia 1\pierwiastki.c(47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+h:\głąb sylwester\zajecia 1\pierwiastki.c(48): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Zajecia 1.vcxproj -> H:\Głąb Sylwester\Zajecia 1\Debug\Zajecia 1.exe
+  Zajecia 1.vcxproj -> H:\Głąb Sylwester\Zajecia 1\Debug\Zajecia 1.pdb (Full PDB)

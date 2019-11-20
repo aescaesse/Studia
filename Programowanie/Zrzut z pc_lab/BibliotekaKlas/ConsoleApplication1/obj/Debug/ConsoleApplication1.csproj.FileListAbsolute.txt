@@ -1,0 +1,11 @@
+H:\Głąb Sylwester\BibliotekaKlas\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+H:\Głąb Sylwester\BibliotekaKlas\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+H:\Głąb Sylwester\BibliotekaKlas\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+H:\Głąb Sylwester\BibliotekaKlas\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+H:\Głąb Sylwester\BibliotekaKlas\ConsoleApplication1\bin\Debug\BibliotekaKlas.dll
+H:\Głąb Sylwester\BibliotekaKlas\ConsoleApplication1\bin\Debug\BibliotekaKlas.pdb
+H:\Głąb Sylwester\BibliotekaKlas\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+H:\Głąb Sylwester\BibliotekaKlas\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+E:\Rok 1\Programowanie\BibliotekaKlas\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojAssemblyReference.cache
+E:\Rok 1\Programowanie\BibliotekaKlas\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\Rok 1\Programowanie\BibliotekaKlas\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
