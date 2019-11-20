@@ -1,6 +1,4 @@
-<object width="400" height="500" type="application/pdf" data="PP-lista1.pdf">
-    <p>sth wrong</p>
-</object>
+<embed src="PP-lista1.pdf" width="500" height="375" type="application/pdf">
 ### Zadanie 
 
 ```cpp
