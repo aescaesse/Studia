@@ -1,0 +1,7 @@
+* Schematics Netlist *
+
+
+
+V_VU         $N_0001 0 100
+R_R         $N_0001 $N_0002  10  
+C_C         $N_0002 0  1m IC=0 

@@ -1,0 +1,107 @@
+
+**** 03/01/19 08:28:35 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\laboratorium\Desktop\Lab_1_2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Mar 01 08:28:35 2019
+
+
+
+** Analysis setup **
+.tran 0.01m 170m 0 0.001m
+.OPTIONS NOBIAS
+.OPTIONS NOPAGE
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab_1_2.net"
+
+**** INCLUDING Lab_1_2.net ****
+* Schematics Netlist *
+
+
+
+X_U2         $N_0001 $N_0002 Sw_tOpen PARAMS: tOpen=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+X_U1         $N_0003 $N_0002 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.01
++  Ropen=1Meg
+R_R         $N_0002 $N_0004  20  
+V_VE1         $N_0001 0 60
+V_VE2         $N_0003 0 DC 60 
++SIN 0 80 25.46479089 0 0 -45
+L_L         $N_0004 0  250m  
+
+**** RESUMING Lab_1_2.cir ****
+.INC "Lab_1_2.als"
+
+
+
+**** INCLUDING Lab_1_2.als ****
+* Schematics Aliases *
+
+.ALIASES
+X_U2            U2(1=$N_0001 2=$N_0002 )
+X_U1            U1(1=$N_0003 2=$N_0002 )
+R_R             R(1=$N_0002 2=$N_0004 )
+V_VE1           VE1(+=$N_0001 -=0 )
+V_VE2           VE2(+=$N_0003 -=0 )
+L_L             L(1=$N_0004 2=0 )
+.ENDALIASES
+
+
+**** RESUMING Lab_1_2.cir ****
+.probe
+
+
+.END
+
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+
+
+               X_U2.Smod       X_U1.Smod       
+         RON     .01             .01         
+        ROFF    1.000000E+06    1.000000E+06 
+         VON    1               1            
+        VOFF    0               0            
+
+
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+
+
+
+
+**** VOLTAGE CONTROLLED SWITCHES
+
+
+NAME         X_U2.S1     X_U1.S1   
+MODEL        X_U2.Smod   X_U1.Smod 
+I LOAD       3.00E+00    3.00E-08 
+V LOAD       3.00E-02    3.00E-02 
+R LOAD       1.00E-02    1.00E+06 
+V CTRL       1.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            6.98
+

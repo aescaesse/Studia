@@ -1,0 +1,73 @@
+
+**** 03/08/19 08:35:37 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\laboratorium\Desktop\lab 2\lab 2.2\lab 2.2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Mar 08 08:35:33 2019
+
+
+
+** Analysis setup **
+.ac DEC 10 0.001 1MEG
+.OPTIONS NOBIAS
+.OPTIONS NOPAGE
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "lab 2.2.net"
+
+**** INCLUDING "lab 2.2.net" ****
+* Schematics Netlist *
+
+
+
+V_VUwe         $N_0001 0 DC 0V AC 1 
+L_L         $N_0002 0  100m  
+R_R         $N_0001 $N_0002  1k  
+
+**** RESUMING "lab 2.2.cir" ****
+.INC "lab 2.2.als"
+
+
+
+**** INCLUDING "lab 2.2.als" ****
+* Schematics Aliases *
+
+.ALIASES
+V_VUwe          VUwe(+=$N_0001 -=0 )
+L_L             L(1=$N_0002 2=0 )
+R_R             R(1=$N_0001 2=$N_0002 )
+.ENDALIASES
+
+
+**** RESUMING "lab 2.2.cir" ****
+.probe
+
+
+.END
+
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

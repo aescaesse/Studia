@@ -1,0 +1,23 @@
+* C:\Users\laboratorium\Desktop\Lab_1_1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Mar 01 08:10:11 2019
+
+
+
+** Analysis setup **
+.tran 0.1m 25m
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab_1_1.net"
+.INC "Lab_1_1.als"
+
+
+.probe
+
+
+.END

@@ -1,0 +1,110 @@
+
+**** 03/01/19 08:55:40 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\laboratorium\Desktop\lab2.3.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Mar 01 08:55:36 2019
+
+
+
+** Analysis setup **
+.tran 10m 500m
+.OPTIONS NOBIAS
+.OPTIONS NOPAGE
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "lab2.3.net"
+
+**** INCLUDING lab2.3.net ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  4  
+L_L1         $N_0001 $N_0003  0.3  
+X_K1         $N_0004 $N_0002 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.001
++  Ropen=1Meg
+X_K2         $N_0002 $N_0005 Sw_tClose PARAMS: tClose=0 ttran=1u Rclosed=0.001
++  Ropen=1Meg
+V_VD         $N_0005 $N_0003 0
+V_VE         $N_0004 0 10
+R_R2         $N_0006 $N_0003  6  
+L_L2         $N_0006 0  0.3  
+
+**** RESUMING lab2.3.cir ****
+.INC "lab2.3.als"
+
+
+
+**** INCLUDING lab2.3.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=$N_0002 2=$N_0001 )
+L_L1            L1(1=$N_0001 2=$N_0003 )
+X_K1            K1(1=$N_0004 2=$N_0002 )
+X_K2            K2(1=$N_0002 2=$N_0005 )
+V_VD            VD(+=$N_0005 -=$N_0003 )
+V_VE            VE(+=$N_0004 -=0 )
+R_R2            R2(1=$N_0006 2=$N_0003 )
+L_L2            L2(1=$N_0006 2=0 )
+.ENDALIASES
+
+
+**** RESUMING lab2.3.cir ****
+.probe
+
+
+.END
+
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+
+
+               X_K1.Smod       X_K2.Smod       
+         RON    1.000000E-03    1.000000E-03 
+        ROFF    1.000000E+06    1.000000E+06 
+         VON    1               1            
+        VOFF    0               0            
+
+
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+
+
+
+
+**** VOLTAGE CONTROLLED SWITCHES
+
+
+NAME         X_K1.S1     X_K2.S1   
+MODEL        X_K1.Smod   X_K2.Smod 
+I LOAD       1.00E-05    4.00E-11 
+V LOAD       1.00E+01    4.00E-05 
+R LOAD       1.00E+06    1.00E+06 
+V CTRL       0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+
