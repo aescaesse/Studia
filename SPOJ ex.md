@@ -1,4 +1,4 @@
-<embed src="SPOJ.pdf" width="500" height="375">
+<embed src="PP-lista1.pdf" width="500" height="375">
 ### Zadanie 
 ```c++
 #include <iostream>
