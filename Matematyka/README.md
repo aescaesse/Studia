@@ -1,0 +1,1 @@
+# Kurs e-trapez https://drive.google.com/open?id=1i-UeKdGeULTsELV_xn8PNBqk2sprfW6x
