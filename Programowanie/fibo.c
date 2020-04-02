@@ -22,5 +22,5 @@ void main()
 	int n;
 	printf("Podaj pozycje ciagu Fib: ");
 	scanf("%i", &n);
-	printf("%d element to: %i", n, Fibo(n);
+	printf("%d element to: %i", n, Fibo(n));
 }
